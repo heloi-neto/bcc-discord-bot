@@ -1,10 +1,11 @@
 {
-  "name": "BCC-Bot",
+  "name": "bcc-bot",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "nodemon server.js"
   },
   "keywords": [],
   "author": "",
@@ -12,5 +13,8 @@
   "dependencies": {
     "discord.js": "^12.5.1",
     "wokcommands": "^1.2.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
   }
 }

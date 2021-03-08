@@ -13,7 +13,7 @@ async function sendWelcomeMessage(member) {
 	/**
 	 * Embed
 	 */
-	const welcomeMessage = {
+	const WelcomeMessage = {
 		content: null,
 		embed: {
 			description: `Bem vindo, <@${member.id}>. veja <#817036733438754866> e <#817036987227832328>`,
@@ -21,5 +21,5 @@ async function sendWelcomeMessage(member) {
 		},
 	};
 
-	channel.send(welcomeMessage);
+	channel.send(WelcomeMessage(member));
 }
