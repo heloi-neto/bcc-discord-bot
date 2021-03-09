@@ -1,5 +1,7 @@
-const Discord = require('discord.js');
-const client = new Discord.Client();
+const DiscordJS = require('discord.js');
+const client = new DiscordJS.Client({
+	partials: ['MESSAGE', 'REACTION'],
+});
 
 const config = require('./config.json');
 
@@ -10,20 +12,23 @@ const config = require('./config.json');
 const WOKCommands = require('wokcommands');
 
 client.on('ready', () => {
-	console.log('Client initialized successfully.');
+	console.log('Client > initialized successfully.');
 	disabledDefaultCommands = [];
 
 	new WOKCommands(client, {
 		commandsDir: 'commands',
 		featuresDir: 'features',
 		messagesPath: 'messages.json',
-		testServers: ['816343519097782343'],
+		// testServers: ['816343519097782343'],
 		disabledDefaultCommands,
 		// showWarns: false,
 	})
+		.setMongoPath(config.mongoPath)
 		.setBotOwner(['493159902487904276'])
 		.setDefaultPrefix('.')
-		.setDefaultLanguage('english');
+		.setDefaultLanguage('english')
+		.setDisplayName('BCC')
+		.setColor(0x9fd7f8);
 });
 
 client.login(config.token);
