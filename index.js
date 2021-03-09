@@ -17,7 +17,7 @@ client.on('ready', () => {
 
 	new WOKCommands(client, {
 		commandsDir: 'commands',
-		featuresDir: 'features',
+		featureDir: 'features',
 		messagesPath: 'messages.json',
 		// testServers: ['816343519097782343'],
 		disabledDefaultCommands,
