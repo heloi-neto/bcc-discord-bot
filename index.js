@@ -19,7 +19,7 @@ client.on('ready', () => {
 		commandsDir: 'commands',
 		featureDir: 'features',
 		messagesPath: 'messages.json',
-		// testServers: ['816343519097782343'],
+		testServers: ['818916585246162964'],
 		disabledDefaultCommands,
 		// showWarns: false,
 	})
@@ -28,7 +28,13 @@ client.on('ready', () => {
 		.setDefaultPrefix('.')
 		.setDefaultLanguage('english')
 		.setDisplayName('BCC')
-		.setColor(0x9fd7f8);
+		.setColor(0x9fd7f8)
+		.setCategorySettings([
+			{
+				name: 'Designer',
+				emoji: '🎨',
+			},
+		]);
 });
 
 client.login(config.token);
