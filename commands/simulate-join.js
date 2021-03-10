@@ -1,13 +1,14 @@
 //! rushed. delete or remake
 
 module.exports = {
-	category: 'Designer',
+	category: 'Roles',
 	name: 'SimulateJoin',
 	description: "Change all roles' color with one certain color to another",
-	testOnly: true,
 	aliases: ['simjoin'],
 	minArgs: 1,
 	maxArgs: 1,
+	testOnly: true,
+	guildOnly: true,
 	callback: ({ args, message }) => {
 		console.log(args[0]);
 		message.guild.members.fetch(args[0]).then((member) => {

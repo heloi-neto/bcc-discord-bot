@@ -12,6 +12,7 @@
   "license": "ISC",
   "dependencies": {
     "discord.js": "^12.5.1",
+    "mathjs": "^9.3.0",
     "mongoose": "^5.11.15",
     "wokcommands": "^1.2.8"
   },

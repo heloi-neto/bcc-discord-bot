@@ -31,8 +31,12 @@ client.on('ready', () => {
 		.setColor(0x9fd7f8)
 		.setCategorySettings([
 			{
-				name: 'Designer',
+				name: 'Roles',
 				emoji: '🎨',
+			},
+			{
+				name: 'Functions',
+				emoji: '🔧',
 			},
 		]);
 });

@@ -1,10 +1,11 @@
 module.exports = {
-	category: 'Designer',
-	name: 'MapRoleColors',
+	category: 'Roles',
+	name: 'RoleMapColors',
 	description: "Change all roles' color from one color to another",
-	aliases: ['maprolecolors', 'maprc'],
+	aliases: ['rolemapcolors', 'rolemc'],
 	minArgs: 2,
 	maxArgs: 2,
+	guildOnly: true,
 	callback: ({ message, args }) => {
 		/**
 		 * Parse the colors arrays
