@@ -59,7 +59,7 @@ module.exports = {
 				color: 0xf97c1c,
 				img: 'https://i.imgur.com/tDdZNbD.png',
 				tag: 'css\n',
-				msg: `[Error - js injection much?]` /*  : ${response.errMsg}` */,
+				msg: `[Critical Error - ${response.errMsg}]`,
 			},
 		};
 
