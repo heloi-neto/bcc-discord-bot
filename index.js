@@ -39,6 +39,15 @@ client.on('ready', () => {
 				emoji: '🔧',
 			},
 		]);
+
+	client.user.setPresence({
+		activity: {
+			name: 'youtube tutorials',
+			type: 'WATCHING',
+		},
+		// afk: true,
+		// status: 'dnd',
+	});
 });
 
 client.login(config.token);

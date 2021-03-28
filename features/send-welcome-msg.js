@@ -10,7 +10,7 @@ function sendWelcomeMessage(member) {
 	 * Embed
 	 */
 	const WelcomeMessage = {
-		content: null,
+		content: `<@${member.id}>`,
 		embed: {
 			title: `${member.user.tag} | Bem-vindo(a)!`,
 			description: `Salve  <@${member.id}> 👋. Seja muito bem-vindo ao servidor de BCC da UTFPR-PG. Sinta-se em casa!\n\n👉 Ah, e não se esqueça de passar no <#817036733438754866> e \n<#816123807147360306> para obter acesso aos canais das suas matérias.`,
